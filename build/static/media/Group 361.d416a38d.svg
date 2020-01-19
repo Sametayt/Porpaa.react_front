@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1002.024" height="176" viewBox="0 0 1002.024 176">
+  <g id="Group_361" data-name="Group 361" transform="translate(-597 -221)">
+    <rect id="Rectangle_232" data-name="Rectangle 232" width="1002.024" height="176" rx="20" transform="translate(597 221)" fill="#1cb2d9"/>
+    <text id="ســــوال_داری_" data-name="ســــوال داری؟" transform="translate(1210.605 314)" fill="#fff" font-size="48" font-family="IRANSans-Bold, IRANSans" font-weight="700"><tspan x="0" y="0">ســــوال داری؟</tspan></text>
+    <rect id="Rectangle_233" data-name="Rectangle 233" width="271.197" height="92.333" rx="20" transform="translate(687 257)" fill="#fecc00"/>
+    <text id="_بــپــرس" data-name="!بــپــرس" transform="translate(766 310)" fill="#505050" font-size="30" font-family="IRANSans-Bold, IRANSans" font-weight="700"><tspan x="0" y="0">!</tspan><tspan y="0">بــپــرس</tspan></text>
+    <g id="Group_245" data-name="Group 245" transform="translate(5 -6)">
+      <path id="Path_217" data-name="Path 217" d="M253.249,324.047h-16.7a6.067,6.067,0,1,1,0-12.133h16.7a6.067,6.067,0,1,1,0,12.133Zm0,0" transform="translate(820.523 -29.914)" fill="#2b9ab7"/>
+      <path id="Path_218" data-name="Path 218" d="M293.989,352.538H236.546a6.068,6.068,0,0,1,0-12.136h57.443a6.068,6.068,0,0,1,0,12.136Zm0,0" transform="translate(820.522 -36.029)" fill="#2b9ab7"/>
+      <path id="Path_219" data-name="Path 219" d="M293.989,376.218H236.546a6.068,6.068,0,0,1,0-12.136h57.443a6.068,6.068,0,0,1,0,12.136Zm0,0" transform="translate(820.522 -41.112)" fill="#2b9ab7"/>
+    </g>
+  </g>
+</svg>

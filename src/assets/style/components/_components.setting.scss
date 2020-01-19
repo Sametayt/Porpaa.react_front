@@ -1,0 +1,137 @@
+//
+// Base styles for setting
+//
+.c-setting__content {
+    background: #fff;
+}
+
+.c-setting__sidebar {
+    border: 2px solid #cbcbcb;
+    border-radius: 10px;
+}
+
+.c-setting__sidebar-title {
+    color: #1cb2d9 !important;
+}
+
+.c-setting__name {
+    color: #707070;
+}
+
+.c-setting__form {
+    width: 80%;
+    margin: auto;
+}
+
+.c-btn--outlineReport__setting {
+    background: $primary-color !important;
+    border: none !important;
+    color: #fff !important;
+    float: left !important;
+}
+
+.c-btn--outlineReport__setting:disabled {
+    background: #bae8f4 !important;
+}
+
+.c-setting__from-content {
+    width: 77% !important;
+    background: #f8f8f8 !important;
+    border-radius: 10px;
+    height: 45px;
+    padding-right: 10px !important;
+    border: none !important;
+    border: 2px solid #cbcbcb !important;
+}
+
+.c-setting__from-content-2 {
+    width: 80% !important;
+    border-radius: 10px;
+    height: 45px;
+    padding-right: 10px !important;
+    border: none !important;
+    border: 2px solid #cbcbcb !important;
+    margin-right: 10px !important;
+}
+
+// .c-setting__from-content-drop{
+//     width: 80% !important;
+// }
+.c-setting__dropdown {
+    height: 40px !important;
+}
+
+.c-setting__dropdown-right {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.c-setting__dropdown-left {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.c-setting__lable {
+    font-size: 13px !important;
+}
+
+.c-setting__lable-2 {
+    font-size: 13px !important;
+    padding-right: 5px !important;
+}
+
+.c-setting-radio {
+    input[type="radio"] {
+        margin-top: 3px !important;
+        margin-left: 3px !important;
+        width: 20px !important;
+        height: 12px !important;
+    }
+}
+
+.c-setting_checkbox {
+    input[type="checkbox"] {
+        margin-top: 4px !important;
+    }
+}
+
+.c-setting__radio-information {
+    input[type="checkbox"] {
+        margin-top: 2px !important;
+        margin-left: 5px !important;
+        width: 20px !important;
+        height: 17px !important;
+    }
+}
+
+.c-setting__form {
+    a {
+        padding: 6px !important;
+        border-radius: 20px !important;
+        color: #000 !important;
+        padding-right: 20px !important;
+        margin-bottom: 10px !important;
+        text-decoration: none;
+    }
+}
+@media(max-width:1023px){
+    .c-setting__from-content{
+        width: 100% !important;
+    }
+    .c-setting__from-content-2{
+        width: 100% !important;
+    }
+    .c-setting_checkbox{
+        margin-top: $base-unit-3x !important;
+    }
+}
+@media (min-width:768px) AND (max-width:768px){
+    .c-setting_checkbox{
+        width: 27%;
+    }
+}
+@media(max-width:650px){
+    .c-setting-title{
+        margin-top: $base-unit-2x !important;
+    }
+}

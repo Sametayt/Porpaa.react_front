@@ -1,0 +1,71 @@
+/* ==========================================================================
+   #MODALS
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+.c-form{
+    input,textarea,select{
+        appearance: none;
+        position: relative;
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 1px solid $border-color;
+        padding: 10px 10px;
+        font-size: 12px;
+        color: $gray-color; 
+        transition: all 200ms linear;
+        &:hover,&:focus{
+            transition: all 200ms linear;
+            border-color: $primary-color;
+        }
+    }
+    .c-form_selectholder{
+        position: relative;
+    }
+
+    .c-form_selectholder:after{
+        content: "";
+        display: block;
+        position: absolute;
+        border-top: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        transform: rotate(135deg);
+        left:15px;
+        top:13px;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+// background color forms
+.c-form__backgray {
+    background-color: $border-color !important;
+}
+
+// boxTimer
+.c-form__boxTimer {
+    background-color: $boxTimer-color !important;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 22px;
+    color: #116A9A;
+}
+
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ 
+ @media(max-width:650px) {
+    .c-form{
+        margin:$base-unit-2x 0 !important;
+    }
+    .c-form__backgray{
+        text-align: center !important;
+    }
+ }
+ 
+ 

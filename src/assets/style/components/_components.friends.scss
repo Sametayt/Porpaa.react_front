@@ -1,0 +1,74 @@
+/* ==========================================================================
+   #FRIENDS
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+.c-custom-tab {
+  border-radius: 100px;
+  background-color: $body-background;
+  margin: 0 20px;
+  a {
+    padding: 10px 0;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    color: $gray-color;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+.c-custom-tab__tags {
+  list-style: none;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+.c-custom-tab__tag-item {
+  list-style: none;
+  padding: 6px 15px;
+  border-radius: 100px;
+  background-color: $body-background;
+  margin: 0 7px;
+  cursor: pointer;
+  @include transition();
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+.c-friend-box__list {
+}
+.c-friend-box_profile {
+}
+.c-friend-box__list-item {
+  color: $gray-color;
+  a {
+    color: $gray-color;
+    text-decoration: none;
+    @include transition();
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  span:last-child {
+    position: relative;
+    top: 4px;
+  }
+
+  &:last-child {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba($border-color, 1);
+  }
+}
+
+/* Mobile & Tablet
+    ========================================================================== */
+
+@media (max-width: 1023px) {
+}
+
+@media (max-width: 650px) {
+}

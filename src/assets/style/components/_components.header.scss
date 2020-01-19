@@ -1,0 +1,237 @@
+/* ==========================================================================
+   #HEADER
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+ .c-header{
+    background-color: #fff;
+    padding: 5px 0;
+ }
+ .c-header__info{
+    font-size: 20px;
+    line-height: 1;
+   p{
+      position: relative;
+      top: 4px;
+      color: $border-color;
+      text-decoration: none;
+   }
+ }
+ .c-profile_Effects-img{
+    position: relative !important;
+    top:$base-unit-3x !important;
+ }
+.c-header-search{
+   width: 620px;
+   max-width: 100%;
+   position: relative;
+   align-self: center;
+}
+.c-header-search__input{
+   width: 100%;
+   border: 1px solid $border-color;
+   padding: 20px 15px;
+   border-radius: 90px;
+   transition: all 200ms linear;
+   &:focus{
+      transition: all 200ms linear;
+      border-color: $primary-color;
+   }
+}
+.c-header-search__icon{
+   position: absolute;
+   color: $border-color;
+   font-size: 30px;
+   left: 20px;
+   top:13px;
+}
+.c-header-search__input_profile{
+   padding:$base-unit-x !important;
+}
+// add search input friends on header
+.c-header-searchFriend__input{
+   width: 100%;
+   border: 1px solid $border-color;
+   padding: 10px 10px;
+   border-radius: 90px;
+   transition: all 200ms linear;
+   &:focus{
+      transition: all 200ms linear;
+      border-color: $primary-color;
+   }
+}
+.c-header-searchFriend__icon{
+   position: absolute;
+   color: $border-color;
+   font-size: 15px;
+   left: 20px;
+   top:13px;
+}
+
+
+.c-header__toolbar{
+   a{
+      @include transition();
+      &:hover{
+         opacity: .6;
+      }
+   }
+}
+.c-header_moderator-parent{
+   background: #1cb2d9;
+   // width: 6% !important;
+   text-align: center !important;
+   border-radius: $base-unit-x;
+   &:hover{
+      background: #b3e1f0 !important;
+   }
+}
+
+.c-header_moderator-parent[disabled] {
+  opacity: .5 !important;
+}
+.c-header_arrow-icon{
+   font-size:30px !important;
+   color: #fff;
+   padding: $base-unit-x;
+}
+ /* Mobile & Tablet
+    ========================================================================== */
+
+ @media(max-width:1023px) {}
+ @media(max-width:768px){
+   .c-header__none{
+      display: none !important;
+   }
+   .c-box_moderator-img {
+     width: 35px !important;
+ }
+}
+
+ @media(max-width:650px) {
+
+    .c-header-searchFriend__icon{
+      top: 29px;
+   }
+
+   .c-header-searchFriend__input {
+      margin-top: 1rem;
+   }
+
+ }
+.c-header__profile{
+   border:1px solid #d7d7d7;
+   background: #d7d7d7;
+   border-radius: $base-unit-x;
+}
+ /* Mobile
+    ========================================================================== */
+
+.bm-item {
+   display: inline-block;
+
+   /* Our sidebar item styling */
+   text-decoration: none;
+   margin-bottom: 10px;
+   color: #d1d1d1;
+   transition: color 0.2s;
+ }
+
+ /* Change color on hover */
+ .bm-item:hover {
+   color: white;
+ }
+
+ /* The rest copied directly from react-burger-menu docs */
+
+ /* Position and sizing of burger button */
+ .bm-burger-button {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   right:22px;
+   top: 20px;
+ }
+
+ /* Color/shape of burger icon bars */
+ .bm-burger-bars {
+   background: #373a47;
+
+ }
+
+ /* Position and sizing of clickable cross button */
+ .bm-cross-button {
+   height: 24px;
+   width: 24px;
+   right: 0px !important;
+   left: 10px !important;
+   top: 20px !important;
+   color: #000 !important;
+ }
+
+ /* Color/shape of close button cross */
+ .bm-cross {
+   background: #bdc3c7;
+ }
+
+ /* General sidebar styles */
+ .bm-menu {
+   background: #17a2b8;
+   padding: 2.5em 1.5em 0;
+   font-size: 1.15em;
+   // display: none;
+ }
+
+ /* Morph shape necessary with bubble or elastic */
+ .bm-morph-shape {
+   fill: #373a47;
+ }
+
+ /* Wrapper for item list */
+ .bm-item {
+   color: #000 !important;
+ }
+ .bm-item-list {
+   color: #b8b7ad;
+ }
+
+ /* Styling of overlay */
+ .bm-overlay {
+   background: rgba(0, 0, 0, 0.3);
+ }
+.c-header_sm{
+   height: 6vh;
+}
+.c-header_sm-logo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   left: 50%;
+   top: 4%;
+   transform: translate(-50%, -50%);
+   // height: 40px;
+   a{
+      color: #1bb2d9!important;
+      padding-left:10px;
+   }
+ }
+ .c-header_sm-icon{
+
+ }
+ .bm-menu-wrap{
+    width: 55% !important;
+    height: 100% !important;
+    bottom: 0% !important;
+    line-height: 40px !important;
+ }
+ @media(min-width:375px) AND (max-width:425px){
+   .c-header_arrow-icon{
+      font-size: 20px !important;
+      padding: 8px !important;
+   }
+ }

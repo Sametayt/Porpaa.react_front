@@ -1,0 +1,38 @@
+/* ==========================================================================
+   #SEARCH BAR
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+ .c-about-slide{
+  margin: 30px 0;
+ }
+ .c-about-slider__img{
+   padding: 0 0;
+  padding-right: 20px;
+  padding-left: 20px;
+   overflow: visible;
+   img{
+     border-radius: 20px;
+     box-shadow: 1px 0 16px 1px rgba(0,0,0,.5);
+     width: 100%;
+   }
+ }
+ .c-about-slider__text{
+  line-height: 1.5;
+ }
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ 
+ @media(max-width:650px) {
+  .c-promotion-card{
+    margin: $base-unit-x 0;
+  }
+  .c-promotion-card__title{font-size: 22px;}
+ }
+ 
+ 

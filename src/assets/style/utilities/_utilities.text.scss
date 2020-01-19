@@ -1,0 +1,174 @@
+/* ==========================================================================
+   #TEXT STYLES
+   ========================================================================== */
+
+
+/**
+* Styles for Text Colors 
+*/
+
+.u-primary-text-color,
+.u-primary-color {
+    color: $primary-color !important;
+}
+
+a.u-primary-text-color,
+a.u-primary-color {
+    &:hover {
+        // color: #fff !important;
+        color: $dark-color !important;
+    }
+}
+
+.u-light-text-color {
+    color: #fff !important;
+}
+
+
+/**
+* Styles for Uppercase 
+*/
+
+.u-uppercase {
+    text-transform: uppercase !important;
+}
+
+
+/**
+* Styles for Capitalize
+*/
+
+.u-capitalize {
+    text-transform: capitalize !important;
+}
+
+.u-justify-text {
+    text-align: justify !important;
+}
+
+
+/**
+* Styles for Font Weights
+*/
+
+.u-light-weight {
+    font-weight: 300 !important;
+}
+
+.u-regular-weight {
+    font-weight: 400 !important;
+}
+
+.u-semibold-weight {
+    font-weight: 600 !important;
+}
+
+.u-bold-weight {
+    font-weight: 700 !important;
+}
+
+
+/**
+* Styles for Line Height
+*/
+
+.u-small-line-height {
+    line-height: 1.2 !important;
+}
+
+.u-medium-line-height {
+    line-height: 1.6 !important;
+}
+
+.u-large-line-height {
+    line-height: 2.2 !important;
+}
+
+
+/**
+* Styles for Font Size
+*/
+
+.u-small-font-size {
+    font-size: 12px;
+}
+
+.u-h1-font-size {
+    font-size: $global-h1 !important;
+}
+
+.u-h2-font-size {
+    font-size: $global-h2 !important;
+}
+
+.u-h3-font-size {
+    font-size: $global-h3 !important;
+}
+
+.u-h4-font-size {
+    font-size: $global-h4 !important;
+}
+
+.u-h5-font-size {
+    font-size: $global-h5 !important;
+}
+
+
+/**
+* Styles for direction
+*/
+
+.u-dir-rtl {
+    direction: rtl !important;
+}
+
+.u-dir-ltr {
+    direction: ltr !important;
+}
+
+
+/* Mobile & Tablet
+   ========================================================================== */
+
+@media(max-width:1023px) {}
+
+@media(max-width:650px) {
+    .u-h1-font-size {
+        font-size: $global-h3;
+    }
+    .u-h2-font-size {
+        font-size: $global-h3;
+    }
+    .u-h3-font-size {
+        font-size: $global-h5;
+    }
+    .u-h4-font-size {
+        font-size: $global-h5;
+    }
+    .u-h5-font-size {}
+    .u-small-line-height-sm {
+        line-height: 1.2 !important;
+    }
+    .u-medium-line-height-sm {
+        line-height: 1.6 !important;
+    }
+    .u-large-line-height-sm {
+        line-height: 2.2 !important;
+    }
+}
+
+
+/* ==========================================================================
+   #text-decoration
+   ========================================================================== */
+
+.u-decoration-none {
+    text-decoration: none !important;
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+.u-has-border {
+    border: 1px solid $gray-color !important;
+}

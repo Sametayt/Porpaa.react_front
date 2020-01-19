@@ -1,0 +1,54 @@
+/* ==========================================================================
+   #SIDEBAR
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+.c-questions__nav {
+}
+.c-sidenav {
+  border: 1px solid #888;
+}
+.c-sidenav__title {
+}
+.c-sidenav__list {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  li {
+    list-style: none;
+    padding: $base-unit-x 0;
+    margin: 0;
+    border-top: 1px solid rgba($border-color, 0.2);
+    i {
+      margin-left: 10px;
+    }
+    a {
+      display: flex;
+      flex-direction: row;
+      color: $gray-color;
+      text-decoration: none;
+      @include transition();
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+/* Mobile & Tablet
+    ========================================================================== */
+
+@media (max-width: 1023px) {
+}
+
+@media (max-width: 650px) {
+  .c-sidenav {
+    width: 100% !important;
+  }
+  .row img {
+    width: 100% !important;
+  }
+}

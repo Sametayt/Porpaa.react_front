@@ -1,0 +1,95 @@
+/* ==========================================================================
+   #SEARCH BAR
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+ 
+ .c-carousel {
+  display: block;
+  width: 100%;
+ }
+ .flickity-prev-next-button{
+   border-radius: 0;
+   background-color: $light-color;
+   widows: 40px;
+   height: 40px;
+   top: 0;
+   margin: 0;
+   transform: translate(0,0);
+   top: -55px;
+   transition: all 200ms linear;
+   &:hover{
+    transition: all 200ms linear;
+    background-color: $light-color;
+    opacity: .6;
+   }
+   .flickity-button-icon {
+      position: absolute;
+      left: 30%;
+      top: 30%;
+      width: 40%;
+      height: 39%;
+  }
+ }  
+ .flickity-prev-next-button.previous{
+  left : auto;
+  right:60px;
+ }
+ .flickity-prev-next-button.next{
+
+ }
+ .c-mission-box__score{
+   position: absolute;
+   left: 33px;
+
+ }
+.c-missions_profile{
+   position: relative;
+   right: $base-unit-5x !important;
+ }
+.c-mission-box__bar {
+   position: relative;
+   left: 15px;
+ }
+ .c-mission-box__bar{
+   .progress{
+      width: 95% !important;
+   }
+}
+//  .c-mission-box__icon{
+//     padding-left: 20px;
+//  }
+ .c-mission_moderator-noti {
+    margin-top: 95px;
+ }
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ @media(min-width:768px)AND(max-width:768px){
+   .c-mission-box__bar{
+      .progress{
+         width: 98% !important;
+      }
+   }
+ }
+ @media(max-width:650px) {
+      .c-carousel{
+         padding-top: 60px;
+      }
+      .flickity-prev-next-button{
+         top: 0 !important;
+      }
+      .c-missions-box__img{
+         width: 50% !important;
+         margin: 0 auto !important;
+      }
+      .progress {
+         width: 95% !important;
+      }
+    
+ }
+ 

@@ -1,0 +1,348 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+// Buttons
+//
+// Button Component Main Class is "c-btn".
+//
+// Markup: markup/buttons.hbs
+//
+// .c-btn--primary   - Style for Primary Button Style.
+// .c-btn--dark    - Style for Dark Button Style.
+// .c-btn--light    - Style for Light Button Style.
+// .c-btn--gray    - Style for Gray Button Style.
+//
+// Style guide: components.button
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+.c-btn {
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: $base-unit-xx $base-unit-2x;
+  @include transition();
+  appearance: none;
+  -webkit-appearance: none;
+  font-size: 14px;
+  white-space: nowrap;
+  text-decoration: none;
+  border-radius: 10px;
+  width: auto;
+}
+
+/* Style Variants
+   ========================================================================== */
+
+/**
+* Styles for Button Color
+*/
+
+.c-btn--primary {
+  background-color: $primary-color;
+  color: #fff;
+  transition: all 200ms linear;
+  border: 2px solid $primary-color !important;
+  box-shadow: none !important;
+  border-radius: 80px;
+  &:hover {
+    transition: all 200ms linear;
+    background-color: lighten($primary-color, 10%);
+    text-decoration: none;
+  }
+}
+
+.c-btn--primary:disabled {
+  background-color: $gray-color;
+  border: 2px solid $gray-color !important;
+  box-shadow: none !important;
+  color: #fff;
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.c-btn--outline {
+  background-color: #fff;
+  color: $primary-color !important;
+  border: 2px solid $primary-color !important;
+  box-shadow: none !important;
+  transition: all 200ms linear;
+  border-radius: 80px;
+  &:hover {
+    transition: all 200ms linear;
+    color: #fff !important;
+    background-color: lighten($primary-color, 10%);
+    text-decoration: none;
+  }
+}
+.c-btn--gray {
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  border-radius: $base-unit-x;
+}
+.c-btn--outlineReport {
+  background-color: #fff;
+  color: $primary-color !important;
+  border: 2px solid $primary-color !important;
+  box-shadow: none !important;
+  transition: all 200ms linear;
+  border-radius: 10px;
+  padding: 8px 35px !important;
+  &:hover {
+    transition: all 200ms linear;
+    color: #fff !important;
+    background-color: lighten($primary-color, 10%);
+    text-decoration: none;
+  }
+}
+.c-btn--outlineReport-blue {
+  background-color: #fff;
+  color: $blue-color !important;
+  border: 2px solid $blue-color !important;
+  box-shadow: none !important;
+  transition: all 200ms linear;
+  border-radius: 10px;
+  padding: 8px 35px !important;
+  &:hover {
+    transition: all 200ms linear;
+    color: #fff !important;
+    background-color: lighten($blue-color, 10%);
+    text-decoration: none;
+  }
+}
+.c-btn--outlineReport-modal-modaretor {
+  padding: 3px 45px !important;
+  border-radius: 15px !important;
+  display: block !important;
+  margin: auto !important;
+}
+.c-btn--outlineReport-modal-modaretor-2 {
+  width: 60% !important;
+}
+.c-btn--outlineReport-profile {
+  border-radius: 25px !important;
+  padding: 2px 17px !important;
+  //margin-right: $base-unit-x !important;
+  width: 100%;
+  height: 35px;
+}
+
+.c-btn--success {
+  background-color: #fff;
+  color: $success-color !important;
+  border: 2px solid $success-color !important;
+  box-shadow: none !important;
+  transition: all 200ms linear;
+  border-radius: 80px;
+  &:hover {
+    transition: all 200ms linear;
+    color: #fff !important;
+    background-color: lighten($success-color, 10%);
+    text-decoration: none;
+  }
+}
+
+.c-btn--secondary {
+  background-color: $secondary-color;
+  color: darken($primary-color, 90%);
+  transition: all 200ms linear;
+  &:hover {
+    transition: all 200ms linear;
+    background-color: lighten($secondary-color, 10%);
+    text-decoration: none;
+  }
+}
+.c-btn--green {
+  background: #fff;
+  color: $green-color !important;
+  border: 2px solid $green-color !important;
+  border-radius: $base-unit-x;
+  transition: all 200ms linear;
+  &:hover {
+    transition: all 200ms linear;
+    background-color: $light-color !important;
+    text-decoration: none;
+  }
+}
+.c-btn--red {
+  background: #fff;
+  color: $red-color !important;
+  border: 2px solid $red-color !important;
+  border-radius: $base-unit-x;
+  transition: all 200ms linear;
+  &:hover {
+    transition: all 200ms linear;
+    background-color: $light-color !important;
+    text-decoration: none;
+  }
+}
+.c-btn--blue {
+  background: #fff;
+  color: $blue-color !important;
+  border: 2px solid $blue-color !important;
+  border-radius: $base-unit-x;
+  transition: all 200ms linear;
+  &:hover {
+    transition: all 200ms linear;
+    background-color: $light-color !important;
+    text-decoration: none;
+  }
+}
+.c-btn--pale-blue {
+  background: #fff;
+  color: $primary-color !important;
+  border: 2px solid $primary-color !important;
+  border-radius: $base-unit-x;
+  transition: all 200ms linear;
+  &:hover {
+    transition: all 200ms linear;
+    background-color: $light-color !important;
+    text-decoration: none;
+  }
+}
+
+/**
+* Styles for Button Types
+*/
+
+.c-btn.has-shadow {
+  box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.c-btn--rounded {
+  border-radius: 999px;
+  padding: 10px 15px;
+}
+
+.c-btn__icon {
+  margin-left: $base-unit-x;
+}
+
+/**
+* Styles for Button Size
+*/
+
+.c-btn--small {
+  padding: 5px 15px;
+  font-size: 12px;
+}
+
+.c-btn--smallx {
+  font-size: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px !important;
+  padding: 0 10px;
+}
+
+.c-btn--smallx-2 {
+  padding-top: 3px !important;
+  height: 23px !important;
+}
+
+.c-btn--normal {
+  padding: $base-unit-x $base-unit-xxx;
+}
+
+.c-btn--medium {
+  padding: 20px 25px;
+  font-size: 16px;
+}
+
+.c-btn--wide {
+  padding: $base-unit-x 30px;
+  font-size: 16px;
+}
+
+.c-btn--large {
+  padding: 25px 40px;
+  font-size: 14px;
+}
+
+.c-btn--xlarge {
+  padding: 25px 60px;
+  font-size: 22px;
+}
+
+.c-btn--full {
+  width: 100%;
+}
+
+.c-btn--cta {
+  font-size: 20px;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+.c-btn {
+}
+
+.c-btn--outlineReportright {
+  margin-left: 16px !important;
+}
+
+/* Mobile & Tablet
+   ========================================================================== */
+
+@media (max-width: 1023px) {
+  .c-btn--outlineReportright {
+    margin-left: 6px !important;
+  }
+}
+@media (min-width: 768px) AND (max-width: 768px) {
+  .c-btn--outlineReportright {
+    margin-bottom: 10px !important;
+  }
+  .c-btn--outlineReport__setting{
+      margin-top:10px !important;
+  }
+  .c-button__information{
+    border-radius: 2% !important;
+  }
+}
+@media (max-width: 650px) {
+  // .c-btn {
+  //   width: 65% !important;
+  //   margin: auto !important;
+  // }
+  .c-button__information {
+    border-radius: 2% !important;
+  }
+  .btn-group {
+    width: 100% !important;
+    font-size: 11px !important;
+  }
+  .c-btn--primary-scroll {
+    width: 50% !important;
+  }
+}
+.c-button__information {
+  border: 1px solid #1cb2d9 !important;
+  border-radius: 8%;
+  color: black;
+  &.active {
+    background: #1cb2d9 !important;
+    color: white;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+.c-button__information_pro {
+  width: 58px !important;
+}
+@media (min-width: 425px) AND (max-width: 425px) {
+  .c-btn--primary-scroll {
+    width: 44% !important;
+  }
+  .btn-group {
+    width: auto !important;
+  }
+}

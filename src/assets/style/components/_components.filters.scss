@@ -1,0 +1,174 @@
+/* ==========================================================================
+   #SEARCH BAR
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+.c-filter__dropdown {
+  padding: $base-unit-x;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid $gray-color;
+  font-size: 12px;
+  color: $gray-color;
+  text-decoration: none !important;
+  width: 130px !important;
+  &:hover {
+    background-color: #fff;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+}
+.c-filter__dropdown-profile {
+  padding-left: $base-unit-6x;
+  padding-right: $base-unit-6x;
+  border: 2px solid #d7d7d7;
+}
+.c-filter__dropdown-list-profile {
+  padding-left: $base-unit-5x;
+  padding-right: $base-unit-5x;
+  border: 2px solid #d7d7d7;
+}
+.c-Filter__span {
+  color: #1bb2d9;
+  font-weight: bold;
+}
+.c-filter__dropdown-list {
+  width: 80% !important;
+  label{
+    font-size: 11px !important;
+  }
+}
+.c-filter__dropdown{
+  &.dropdown-menu.show {
+    width: 90% !important;
+  }
+}
+.c-filter__dropdown-moderator {
+  padding: $base-unit-x $base-unit-7x !important;
+}
+.c-filter__dropdown-moderator-1 {
+  padding: $base-unit-x $base-unit-7x !important;
+  background: #f8f8f8;
+}
+.c-filter__checkbox {
+  border: 1px solid $gray-color;
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  color: $gray-color;
+  min-height: 45px;
+  margin-left: 10px;
+  img {
+    max-height: 25px;
+  }
+  .btn {
+    border-left: 1px solid $gray-color !important;
+  }
+}
+
+.c-filter__checkbox-btn {
+  border-left: 1px solid grey !important;
+}
+
+.c-filter__checkbox-btn.active {
+  // border: none !important;
+}
+.c-filter__drop-profile{
+  width: 90% !important;
+}
+.c-filter__checkbox-btn:hover {
+  background-color: #fff !important;
+  border-left: 1px solid grey !important;
+  border-right: 1px solid grey !important;
+}
+
+.c-filter__checkbox-btn:last-child {
+  border-left: none !important;
+}
+
+.c-filter__checkbox-btn::after {
+  width: 0;
+  height: 0;
+  content: '';
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #111214 transparent transparent transparent;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c-filter__checkbox-btn.active::after {
+  opacity: 1;
+}
+
+.c-filter_dropdown-parent-moderator {
+  // margin-right: $base-unit-8x !important;
+  justify-content: center !important;
+  border-bottom: 1px solid #c9c9c9;
+}
+.c-filter__dropdown-list-moderators1 {
+  &.dropdown-menu.show {
+    width: 93% !important;
+}
+}
+.c-filter__dropdown-list-moderators2 {
+  &.dropdown-menu.show {
+    width: 93% !important;
+}
+}
+/* Mobile & Tablet
+    ========================================================================== */
+
+@media (max-width: 1023px) {
+}
+@media (min-width: 768px) AND (max-width: 768px){
+  .c-filter__dropdown-list {
+    width: 89% !important;
+}
+.c-filter__drop-profile {
+  width: 86% !important;
+}
+}
+@media (max-width: 650px) {
+  .o-container-fluid {
+    padding: 0 20px;
+  }
+  .c-filter__dropdown {
+    margin-bottom: 6px !important;
+    width: 100% !important;
+  }
+  .c-filter__checkbox {
+    margin-bottom: 6px !important;
+    margin-left: 10px !important;
+  }
+  // .c-filter__checkbox_question {
+  //   width: auto !important;
+  // }
+  .dropup,
+  .dropright,
+  .dropdown,
+  .dropleft {
+    width: 100% !important;
+  }
+  .dropdown-menu.show {
+    // width: 100% !important;
+  }
+  .c-filter__dropdown-list {
+    width: 96% !important;
+}
+}
+@media (min-width:768px) AND (max-width:768px){
+  .c-filter__dropdown-list-moderators1.dropdown-menu.show {
+    width: 89% !important;
+  }
+  .c-filter__dropdown-list-moderators2.dropdown-menu.show{
+    width: 89% !important;
+  }
+}

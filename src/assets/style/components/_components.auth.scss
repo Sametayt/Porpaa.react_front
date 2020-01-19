@@ -1,0 +1,73 @@
+/* ==========================================================================
+   #LOGIN/REGISTER
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+.c-register-card__basic {
+  min-width: 230px;
+  padding: 20px 25px;
+  border-left: 1px solid $border-color;
+  img {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+}
+.c-register-card__more {
+  padding: 20px 25px;
+}
+.c-register__card-form {
+  border: 4px solid $border-color;
+  border-radius: 15px;
+  input,
+  textarea,
+  select {
+    border-radius: 15px !important;
+  }
+}
+
+.c-form__label-group {
+  height: 100%;
+  align-items: center;
+  white-space: nowrap;
+  background: #dcdcdb;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid #b9b9b8;
+}
+
+.c-register__card-form .c-form__verification {
+  border-radius: 20px 0px 0px 20px !important;
+}
+.forgot-password:hover {
+  color: $primary-color;
+  text-decoration: none;
+}
+/* Mobile & Tablet
+    ========================================================================== */
+
+@media (max-width: 1023px) {
+
+    .c-modal__mini{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .c-register-card__basic {
+        
+        padding: 0px 30px;
+        
+        padding-top: 20px;
+    }
+    .c-register-card__more{
+        padding: 0px 25px;            
+    }
+}
+
+@media (max-width: 650px) {
+}

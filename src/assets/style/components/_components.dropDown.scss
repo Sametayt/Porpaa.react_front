@@ -1,0 +1,12 @@
+.c-dropDown-menu {
+  padding: 15px;
+}
+.c-dropDown-menu__input {
+  border-radius: 10px;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid grey;
+}
+.c-dropDown__dropDown-toggle::after {
+  content: none !important;
+}

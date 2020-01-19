@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #FOOTER
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+ 
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+
+ @media(max-width:650px) {
+
+ }
+ 
+ @media(max-width:768px){
+   .c-footer-padding{
+      padding-top:$base-unit-2x !important;
+      padding-bottom:$base-unit-2x !important;
+   }
+ } 

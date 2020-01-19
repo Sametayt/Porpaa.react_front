@@ -1,0 +1,634 @@
+/* ==========================================================================
+   #PADDING & MARGIN HELPER CLASSES
+   ========================================================================== */
+
+.u-no-padding {
+    padding: 0 !important;
+}
+.u-no-margin {
+    margin: 0 !important;
+}
+.u-no-margin-vertical{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.u-no-padding-vertical {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+/**
+ * Add Padding for Top and Bottom
+ */
+
+.u-xsmall-padding-vertical {
+    padding-top:$base-unit !important;
+    padding-bottom:$base-unit !important;
+}
+
+
+.u-small-padding-vertical {
+    padding-top:$base-unit-x !important;
+    padding-bottom:$base-unit-x !important;
+}
+
+.u-smallx-padding-vertical {
+    padding-top:$base-unit-xxx !important;
+    padding-bottom:$base-unit-xxx !important;
+}
+
+
+.u-medium-padding-vertical {
+
+    padding-top:$base-unit-2x !important;
+    padding-bottom:$base-unit-2x !important;
+}
+
+.u-large-padding-vertical {
+
+    padding-top: $base-unit-4x !important;
+    padding-bottom: $base-unit-4x !important;
+}
+
+.u-xlarge-padding-vertical {
+    padding-top: $base-unit-8x !important;
+    padding-bottom: $base-unit-8x !important;
+}
+
+
+/**
+ * Add Padding for Left and Right
+ */
+
+.u-small-padding-horizontal {
+    padding-left:$base-unit !important;
+    padding-right:$base-unit !important;
+}
+
+.u-smallx-padding-horizontal {
+    padding-left:$base-unit-xxx !important;
+    padding-right:$base-unit-xxx !important;
+}
+
+.u-medium-padding-horizontal {
+
+    padding-left:$base-unit-2x !important;
+    padding-right:$base-unit-2x !important;
+}
+
+.u-large-padding-horizontal {
+
+    padding-left: $base-unit-4x !important;
+    padding-right: $base-unit-4x !important;
+}
+
+.u-xlarge-padding-horizontal {
+    padding-left: $base-unit-8x !important;
+    padding-right: $base-unit-8x !important;
+}
+
+.u-smallx-padding-horizontal {
+    padding-left:$base-unit-xxx !important;
+    padding-right:$base-unit-xxx !important;
+}
+/**
+ * Add Padding for  Bottom
+ */
+
+.u-no-padding-bottom {
+    padding-bottom: 0px !important;
+}
+
+.u-small-padding-bottom {
+    padding-bottom:$base-unit !important;
+}
+
+.u-smallx-padding-bottom {
+    padding-bottom:$base-unit-xxx !important;
+}
+
+.u-medium-padding-bottom {
+
+    padding-bottom:$base-unit-2x !important;
+}
+
+.u-large-padding-bottom {
+
+    padding-bottom: $base-unit-4x !important;
+}
+
+.u-xlarge-padding-bottom {
+    padding-bottom: $base-unit-8x !important;
+}
+
+/**
+ * Add Padding for Top
+ */
+.u-no-padding-top {
+    padding-top: 0px !important;
+}
+
+.u-small-padding-top {
+    padding-top:$base-unit !important;
+}
+
+.u-smallx-padding-top {
+    padding-top:$base-unit-xxx !important;
+}
+
+.u-medium-padding-top {
+
+    padding-top:$base-unit-2x !important;
+}
+
+.u-large-padding-top {
+
+    padding-top: $base-unit-4x !important;
+}
+
+.u-xlarge-padding-top {
+    padding-top: $base-unit-8x !important;
+}
+
+/**
+ * Add Padding and left border for popover
+ */
+.u-popover-padding {
+    padding: 10px;
+    text-align: center;
+}
+.u-popover-padding__left {
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    text-align: center;
+}
+.u-popover-padding__right {
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+
+/**
+ * Add Margin for Top and Bottom
+ */
+
+.u-small-margin-vertical {
+    margin-top:$base-unit !important;
+    margin-bottom:$base-unit !important;
+}
+
+.u-smallx-margin-vertical {
+    margin-top:$base-unit-xxx !important;
+    margin-bottom:$base-unit-xxx !important;
+}
+
+.u-medium-margin-vertical {
+
+    margin-top:$base-unit-2x !important;
+    margin-bottom:$base-unit-2x !important;
+}
+
+.u-large-margin-vertical {
+
+    margin-top: $base-unit-4x !important;
+    margin-bottom: $base-unit-4x !important;
+}
+
+.u-xlarge-margin-vertical {
+    margin-top: $base-unit-8x !important;
+    margin-bottom: $base-unit-8x !important;
+}
+
+
+/**
+ * Add Margin for Left and Right
+ */
+
+.u-small-margin-horizontal {
+    margin-left:$base-unit !important;
+    margin-right:$base-unit !important;
+}
+
+.u-smallx-margin-horizontal {
+    margin-left:$base-unit-xxx !important;
+    margin-right:$base-unit-xxx !important;
+}
+
+.u-medium-margin-horizontal {
+
+    margin-left:$base-unit-2x !important;
+    margin-right:$base-unit-2x !important;
+}
+
+.u-large-margin-horizontal {
+
+    margin-left: $base-unit-4x !important;
+    margin-right: $base-unit-4x !important;
+}
+
+.u-xlarge-margin-horizontal {
+    margin-left: $base-unit-8x !important;
+    margin-right: $base-unit-8x !important;
+}
+
+
+/**
+ * Add Margin for Top
+ */
+
+.u-small-margin-top {
+    margin-top:$base-unit !important;
+}
+
+.u-smallx-margin-top {
+    margin-top:$base-unit-xxx !important;
+}
+.u-xssmallx-margin-top{
+    margin-top:$base-unit-xxx !important;
+}
+.u-medium-margin-top {
+
+    margin-top:$base-unit-2x !important;
+}
+
+.u-large-margin-top {
+
+    margin-top: $base-unit-4x !important;
+}
+
+.u-xlarge-margin-top {
+    margin-top: $base-unit-8x !important;
+}
+
+
+/**
+ * Add Margin for Top
+ */
+
+.u-small-margin-bottom {
+    margin-bottom:$base-unit !important;
+}
+
+.u-smallx-margin-bottom {
+    margin-bottom:$base-unit-xxx !important;
+}
+
+.u-medium-margin-bottom {
+
+    margin-bottom:$base-unit-2x !important;
+}
+
+.u-large-margin-bottom {
+
+    margin-bottom: $base-unit-4x !important;
+}
+
+.u-xlarge-margin-bottom {
+    margin-bottom: $base-unit-8x !important;
+}
+
+
+/**
+ * Add Margin for Right
+ */
+
+.u-small-margin-right {
+    margin-right:$base-unit !important;
+}
+
+.u-smallx-margin-right {
+    margin-right:$base-unit-xxx !important;
+}
+
+.u-medium-margin-right {
+
+    margin-right:$base-unit-2x !important;
+}
+
+.u-large-margin-right {
+
+    margin-right: $base-unit-4x !important;
+}
+
+.u-xlarge-margin-right {
+    margin-right: $base-unit-8x !important;
+}
+.u-margin-right-auto{
+    margin-right: auto !important;
+}
+
+/**
+ * Add Margin for Left
+ */
+
+.u-small-margin-left {
+    margin-left:$base-unit !important;
+}
+
+.u-smallx-margin-left {
+    margin-left:$base-unit-xxx !important;
+}
+.u-medium-margin-left {
+
+    margin-left:$base-unit-2x !important;
+}
+
+.u-large-margin-left {
+
+    margin-left: $base-unit-4x !important;
+}
+
+.u-xlarge-margin-left {
+    margin-left: $base-unit-8x !important;
+}
+.u-margin-left-auto{
+    margin-right: auto !important;
+}
+/* Mobile & Tablet
+   ========================================================================== */
+   @media (max-width: 1023px) {
+         /**
+    * Add margin for Top and Bottom
+    */
+    .u-smallx-margin-top-xs{
+        margin-top:$base-unit-xxx !important;
+    }
+             /**
+    * Add margin for left and right
+    */
+    .u-smallx-margin-left-xs{
+        margin-left:$base-unit-xxx !important;
+    }
+}
+@media(max-width:650px) {
+
+
+    .u-clear-horizontal-offset-sm{
+
+        margin-left: -$base-unit-x !important;
+        margin-right: -$base-unit-x !important;
+    }
+    /**
+    * Add Padding for Top and Bottom
+    */
+
+    .u-no-margin-sm {
+        margin: 0 !important;
+    }
+    .u-no-margin-sm {
+        margin: 0 !important;
+    }
+
+    .u-xsmall-padding-vertical-sm {
+        padding-top:$base-unit !important;
+        padding-bottom:$base-unit !important;
+    }
+
+    .u-large-padding-vertical-sm {
+
+        padding-top: $base-unit-4x !important;
+        padding-bottom: $base-unit-4x !important;
+    }
+
+    .u-xlarge-padding-vertical-sm {
+        padding-top: $base-unit-8x !important;
+        padding-bottom: $base-unit-8x !important;
+    }
+    .u-medium-padding-vertical-sm {
+
+        padding-top:$base-unit-2x !important;
+        padding-bottom:$base-unit-2x !important;
+    }
+
+    /**
+    * Add Padding for Left and Right
+    */
+
+    .u-small-padding-horizontal-sm {
+        padding-left:$base-unit !important;
+        padding-right:$base-unit !important;
+    }
+
+    .u-medium-padding-horizontal-sm {
+
+        padding-left:$base-unit-2x !important;
+        padding-right:$base-unit-2x !important;
+    }
+
+    .u-large-padding-horizontal-sm {
+
+        padding-left: $base-unit-4x !important;
+        padding-right: $base-unit-4x !important;
+    }
+
+    .u-xlarge-padding-horizontal-sm {
+        padding-left: $base-unit-8x !important;
+        padding-right: $base-unit-8x !important;
+    }
+
+
+    /**
+    * Add Padding for  Bottom
+    */
+
+    .u-no-padding-bottom-sm {
+        padding-bottom: 0px !important;
+    }
+
+    .u-small-padding-bottom-sm {
+        padding-bottom:$base-unit !important;
+    }
+
+    .u-medium-padding-bottom-sm {
+
+        padding-bottom:$base-unit-2x !important;
+    }
+
+    .u-large-padding-bottom-sm {
+
+        padding-bottom: $base-unit-4x !important;
+    }
+
+    .u-xlarge-padding-bottom-sm {
+        padding-bottom: $base-unit-8x !important;
+    }
+
+    /**
+    * Add Padding for Top
+    */
+    .u-no-padding-top-sm {
+        padding-top: 0px !important;
+    }
+
+    .u-small-padding-top-sm {
+        padding-top:$base-unit !important;
+    }
+
+    .u-medium-padding-top-sm {
+
+        padding-top:$base-unit-2x !important;
+    }
+
+    .u-large-padding-top-sm {
+
+        padding-top: $base-unit-4x !important;
+    }
+
+    .u-xlarge-padding-top-sm {
+        padding-top: $base-unit-8x !important;
+    }
+
+
+    /**
+    * Add Margin for Top and Bottom
+    */
+
+    .u-small-margin-vertical-sm {
+        margin-top:$base-unit !important;
+        margin-bottom:$base-unit !important;
+    }
+
+    .u-medium-margin-vertical-sm {
+
+        margin-top:$base-unit-2x !important;
+        margin-bottom:$base-unit-2x !important;
+    }
+
+    .u-large-margin-vertical-sm {
+
+        margin-top: $base-unit-4x !important;
+        margin-bottom: $base-unit-4x !important;
+    }
+
+    .u-xlarge-margin-vertical-sm {
+        margin-top: $base-unit-8x !important;
+        margin-bottom: $base-unit-8x !important;
+    }
+
+
+    /**
+    * Add Margin for Left and Right
+    */
+
+    .u-small-margin-horizontal-sm {
+        margin-left:$base-unit !important;
+        margin-right:$base-unit !important;
+    }
+
+
+    .u-medium-margin-horizontal-sm {
+
+        margin-left:$base-unit-2x !important;
+        margin-right:$base-unit-2x !important;
+    }
+
+    .u-large-margin-horizontal-sm {
+
+        margin-left: $base-unit-4x !important;
+        margin-right: $base-unit-4x !important;
+    }
+
+    .u-xlarge-margin-horizontal-sm {
+        margin-left: $base-unit-8x !important;
+        margin-right: $base-unit-8x !important;
+    }
+
+
+    /**
+    * Add Margin for Top
+    */
+
+    .u-small-margin-top-sm {
+        margin-top:$base-unit !important;
+    }
+
+    .u-medium-margin-top-sm {
+
+        margin-top:$base-unit-2x !important;
+    }
+
+    .u-large-margin-top-sm {
+
+        margin-top: $base-unit-4x !important;
+    }
+
+    .u-xlarge-margin-top-sm {
+        margin-top: $base-unit-8x !important;
+    }
+
+    .u-no-margin-top-sm{
+        margin-top:0px !important;
+    }
+    /**
+    * Add Margin for Top
+    */
+
+    .u-small-margin-bottom-sm {
+        margin-bottom:$base-unit !important;
+    }
+
+    .u-medium-margin-bottom-sm {
+
+        margin-bottom:$base-unit-2x !important;
+    }
+
+    .u-large-margin-bottom-sm {
+
+        margin-bottom: $base-unit-4x !important;
+    }
+
+    .u-xlarge-margin-bottom-sm {
+        margin-bottom: $base-unit-8x !important;
+    }
+
+
+    /**
+    * Add Margin for Right
+    */
+
+    .u-small-margin-right-sm {
+        margin-right:$base-unit !important;
+    }
+
+    .u-medium-margin-right-sm {
+
+        margin-right:$base-unit-2x !important;
+    }
+
+    .u-large-margin-right-sm {
+
+        margin-right: $base-unit-4x !important;
+    }
+
+    .u-xlarge-margin-right-sm {
+        margin-right: $base-unit-8x !important;
+    }
+
+
+    /**
+    * Add Margin for Left
+    */
+
+    .u-small-margin-left-sm {
+        margin-left:$base-unit !important;
+    }
+    .u-medium-margin-left-sm {
+
+        margin-left:$base-unit-2x !important;
+    }
+
+    .u-large-margin-left-sm {
+
+        margin-left: $base-unit-4x !important;
+    }
+
+    .u-xlarge-margin-left-sm {
+        margin-left: $base-unit-8x !important;
+    }
+
+}
+@media (max-width: 768px){
+    .u-smallx-padding-bottom-md {
+        padding-bottom:$base-unit-xxx !important;
+    }
+}

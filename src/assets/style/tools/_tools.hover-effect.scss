@@ -1,0 +1,27 @@
+//* ========================================================================
+//   #HOVER EFFECTS TRANSITION
+//   ======================================================================== */
+
+// Mixin to quickly apply accessible hiding to elements.
+
+@mixin transition() {
+  transition: all $link-hover-transition-time $link-hover-transition-effect;
+  -webkit-transition: all $link-hover-transition-time $link-hover-transition-effect;
+  -moz-transition: all $link-hover-transition-time $link-hover-transition-effect;
+  &:hover{
+      transition: all $link-hover-transition-time $link-hover-transition-effect;
+      -webkit-transition: all $link-hover-transition-time $link-hover-transition-effect;
+      -moz-transition: all $link-hover-transition-time $link-hover-transition-effect;
+  }
+}
+@mixin transition-menu() {
+  transition: all $menu-open-transition-time $menu-open-transition-effect;
+  -webkit-transition: all $menu-open-transition-time $menu-open-transition-effect;
+  -moz-transition: all $menu-open-transition-time $menu-open-transition-effect;
+
+  &:hover {
+    transition: all $menu-open-transition-time $menu-open-transition-effect;
+    -webkit-transition: all $menu-open-transition-time $menu-open-transition-effect;
+    -moz-transition: all $menu-open-transition-time $menu-open-transition-effect;
+  }
+}

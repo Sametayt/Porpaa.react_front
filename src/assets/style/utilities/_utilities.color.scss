@@ -1,0 +1,41 @@
+/* ==========================================================================
+   #COLORS
+   ========================================================================== */
+
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.u-light-bkg {
+  background-color: #fff !important;
+}
+.u-primary-bkg {
+  background-color: $primary-color !important;
+}
+.u-secondary-bkg {
+  background-color: $secondary-color !important;
+}
+.u-gray-bkg {
+  background-color: $gray-color-light !important;
+}
+
+.u-light-color {
+  color: #fff !important;
+}
+.u-primary-color {
+  color: $primary-color !important;
+}
+.u-secondary-color {
+  color: $secondary-color !important;
+}
+
+/**
+ * Show elemnts with "u-show-on-mobile" on mobile & tablet
+ */
+
+@media (max-width: 1023px) {
+  .u-show-on-mobile {
+    display: block;
+  }
+}

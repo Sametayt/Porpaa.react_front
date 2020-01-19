@@ -1,0 +1,228 @@
+
+/* ==========================================================================
+   #BOX STYLE
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+ .c-box{
+   background-color: #fff;
+   border-radius: $global-radius;
+ }
+ .c-box__question-profile{
+   border: 2px solid #d7d7d7 !important;
+   margin:$base-unit-2x auto !important;
+   width: 89%;
+   border-radius: $base-unit-2x !important;
+  
+}
+ .c-box__title{
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .c-box-side{
+   border-top: 2px solid #d7d7d7;
+   background: $light-color;
+}
+.c-box_profile-side{
+   margin-top: $base-unit-6x;
+}
+.c-box-side-info{
+   background: #f9f9f9;
+   height: auto;
+   border-radius: $base-unit-2x;
+   width: 80%;
+   margin: auto;
+}
+.c-answerbox{
+    background-color: rgba($primary-color,.3);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.c-box_moderator {
+   border: 1px solid #c9c9c9;
+   background: #fff;
+   width: 100%;
+   margin: 0 auto;
+   height: auto;
+   border-radius: $base-unit-x;
+   div {
+      &:not(:last-child) {
+         border-left: 1px solid #000;
+      }
+   } 
+}
+.c-box_moderator-titile{
+   padding: 17px 12px;
+}
+
+.c-box_moderator--alert {
+   font-size: 16px;
+   color: #1cb2d9;
+   font-weight: bold;
+   i {
+      font-size: 20px;
+   }
+}
+
+.c-box_moderator--input {
+   font-size: 16px;
+   input {
+      margin-left: 10px;
+   }
+   input[type="radio"]{
+      position: relative;
+      height: 25px;
+      width: 30px;
+      // top: 10px;
+   }
+}
+.c-box_moderator--search {
+   &:hover  {
+      .c-box_moderator--hover {
+         display: block !important;
+      }
+   }
+}
+
+.c-box_moderator--hover {
+   width: 100%;
+   background-color: white;
+   border-radius: 20px;
+   border: 1px solid #000;
+   position: absolute;
+   display: none;
+   z-index: 9999;
+}
+
+.c-box_moderator--hovertext { 
+   font-size: 14px;
+}
+
+.c-box_img-moderator {
+   // position: relative;
+   // bottom: 17px;
+   height: 30px;
+   width: 30px;
+   margin-top: 10px ;
+   margin-left: 10px;
+}
+.c-box_img-moderator-pen{
+   height: 30px;
+   width: 30px;
+   margin-top: 17px;
+   margin-left: 10px;
+}
+.c-box_moderator-img{
+   width: 45px !important;
+}
+.c-box_moderator-content {
+   background: #fff !important;
+   border-radius: $base-unit-x;
+
+   .c-box_moderator-border:not(:last-child) {
+      border-bottom: 1px solid #c7c7c7;
+   }
+}
+
+.c-box__moderator-text {
+   color:#13d173;
+   background: #e4f9ef;
+   border-radius: $base-unit-2x;
+   font-weight: bold;
+}
+.c-box_modaretor-1{
+   color: #dc3409;
+   text-decoration: line-through;
+
+}
+.c-box_modaretor-2{
+   color: #8be9ba;
+
+}
+.c-box_moderator-answer-dropdown{
+   border: 1px solid #c9c9c9;
+   border-radius: $base-unit-x;
+}
+.c-box__friend-sidebar-text{
+   font-size: 12px !important;
+}
+.c-box_search-share-bottom-side{
+   position: relative;
+   right: 53px;
+   bottom: 7px;
+   font-size: 25px;
+   height: 5px;
+}
+.c-box_moderator-tags{
+   border: 1px solid #d1d1d1 !important;
+   border-radius: 15px !important;
+}
+.c-box__moderator-small-tags{
+   background: #d3dfe2;
+   color: #1d8daa;
+   border:1px solid #cccdcd;
+   border-radius: 20px;
+}
+.c-box__react-tags{
+  .react-tags{
+   padding:16px 0px !important;
+   margin-right:0px !important;
+}
+}
+.c-box_moderator{
+   & a{
+    color: #000 !important;
+    text-decoration: none !important;
+   }
+}
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {
+    .c-box_moderator div:not(:last-child) {
+         border-left: 0px !important;
+      }
+ }
+ 
+ @media(max-width:650px) {
+      .c-carousel{
+         padding-top: 60px;
+      }
+      .flickity-prev-next-button{
+         top: 0 !important;
+      }
+      .c-box__filter-moderator{
+         margin-top:20px !important;
+      }
+      .c-box_moderator-content {
+         h4 {
+            font-size: 11px !important;
+         }
+         span {
+            font-size: 12px !important;
+         }
+      }
+
+      .c-box_moderator--input {
+         font-size: 13px;
+      }
+      .c-box__moderator-text {
+         white-space: nowrap;
+         padding: 7px !important;
+         // margin-top: .4rem !important;
+      }
+
+      .c-box_moderator--alert {
+         font-size: 14px;
+         i {
+            font-size: 18px;
+         }
+      }
+
+      
+ }
+
+ 

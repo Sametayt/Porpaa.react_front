@@ -1,0 +1,25 @@
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:10.13.0
+
+pipelines:
+  branches:
+    master:
+      - step:
+          script:
+            - echo "This script runs only on commit to the master branch."
+    development:
+            - step:
+                     caches:
+                       - node
+                     script: # Modify the commands below to build your repository.
+                       - echo "$(ls -la)"
+                       - npm install -g yarn
+                       - yarn install
+                       - yarn build
+                       - echo "$(ls -la dist/)"
+                       - scp -r build mohamad@185.227.139.39:/home/mohamad/porpaa-front
+                       - ssh mohamad@185.227.139.39 "echo porpaa2019 | sudo -S service nginx restart"

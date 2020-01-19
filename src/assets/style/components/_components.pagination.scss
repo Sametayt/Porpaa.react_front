@@ -1,0 +1,88 @@
+/* ==========================================================================
+   #PAGINATION
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+ .c-pagination{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     direction: ltr;
+     ul{
+        display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     padding: 0 10px;
+     margin: 0;
+     li{
+         width: 25px;
+         margin:0 5px;
+         height: 25px;
+         line-height: 26px;
+         border-radius: 50%;
+         a,span{
+             color: $gray-color;
+             display: block;
+             width: 100%;
+             height: 100%;
+             transition: all 200ms linear;
+             border-radius: 50%;
+             text-align: center;
+             margin:0;
+             font-size: 14px;
+             text-decoration: none;
+             cursor: pointer;
+             &:hover{
+                color:#fff;
+                transition: all 200ms linear;
+                background-color: $primary-color;
+             }
+         }
+
+         &.active{
+            a{
+                color:#fff;
+                transition: all 200ms linear;
+                background-color: $primary-color;
+            }
+        }
+
+     }
+
+    }
+ }
+
+ .c-pagination__btn,.previous,.next{
+     width: 35px;
+     height: 30px;
+     color : $gray-color;
+     background-color: #fff;
+     border-radius: 10px;
+     border: 1px solid rgba($gray-color,.3);
+     text-align: center;
+     line-height: 32px;
+     transition: all 200ms linear;
+    &:hover{
+        text-align: center;
+        transition: all 200ms linear;
+        color: #fff;
+        background-color: $primary-color;
+    }
+
+ }
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ 
+ @media(max-width:650px) {
+
+ }
+ 
+ 
